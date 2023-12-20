@@ -1,0 +1,1519 @@
+2020-09-16  Alessio Di Mauro <alessio@yubico.com>
+
+	* NEWS: Update NEWS file
+
+2020-09-16  Alessio Di Mauro <alessio@yubico.com>
+
+	* NEWS, configure.ac: Update version number to reflect changes
+
+2020-09-17  Alessio Di Mauro <alessio@yubico.com>
+
+	* configure.ac, tests/Makefile.am,
+	tests/credentials/new_-N.cred.in, tests/credentials/new_-N.templ,
+	tests/credentials/new_-P-N.cred.in,
+	tests/credentials/new_-P-N.templ,
+	tests/credentials/new_-P-V-N.cred.in,
+	tests/credentials/new_-P-V-N.templ,
+	tests/credentials/new_-P-V.cred.in,
+	tests/credentials/new_-P-V.templ, tests/credentials/new_-P.cred.in,
+	tests/credentials/new_-P.templ, tests/credentials/new_-V-N.cred.in,
+	tests/credentials/new_-V-N.templ, tests/credentials/new_-V.cred.in,
+	tests/credentials/new_-V.templ, tests/credentials/new_-r-N.cred.in,
+	tests/credentials/new_-r-N.templ,
+	tests/credentials/new_-r-P-N.cred.in,
+	tests/credentials/new_-r-P-N.templ,
+	tests/credentials/new_-r-P-V-N.cred.in,
+	tests/credentials/new_-r-P-V-N.templ,
+	tests/credentials/new_-r-P-V.cred.in,
+	tests/credentials/new_-r-P-V.templ,
+	tests/credentials/new_-r-P.cred.in,
+	tests/credentials/new_-r-P.templ,
+	tests/credentials/new_-r-V-N.cred.in,
+	tests/credentials/new_-r-V-N.templ,
+	tests/credentials/new_-r-V.cred.in,
+	tests/credentials/new_-r-V.templ, tests/credentials/new_-r.cred.in,
+	tests/credentials/new_-r.templ, tests/credentials/new_.cred.in,
+	tests/credentials/new_.templ,
+	tests/credentials/new_double_-N.cred.in,
+	tests/credentials/new_double_-N.templ,
+	tests/credentials/new_double_-P-N.cred.in,
+	tests/credentials/new_double_-P-N.templ,
+	tests/credentials/new_double_-P-V-N.cred.in,
+	tests/credentials/new_double_-P-V-N.templ,
+	tests/credentials/new_double_-P-V.cred.in,
+	tests/credentials/new_double_-P-V.templ,
+	tests/credentials/new_double_-P.cred.in,
+	tests/credentials/new_double_-P.templ,
+	tests/credentials/new_double_-V-N.cred.in,
+	tests/credentials/new_double_-V-N.templ,
+	tests/credentials/new_double_-V.cred.in,
+	tests/credentials/new_double_-V.templ,
+	tests/credentials/new_double_-r-N.cred.in,
+	tests/credentials/new_double_-r-N.templ,
+	tests/credentials/new_double_-r-P-N.cred.in,
+	tests/credentials/new_double_-r-P-N.templ,
+	tests/credentials/new_double_-r-P-V-N.cred.in,
+	tests/credentials/new_double_-r-P-V-N.templ,
+	tests/credentials/new_double_-r-P-V.cred.in,
+	tests/credentials/new_double_-r-P-V.templ,
+	tests/credentials/new_double_-r-P.cred.in,
+	tests/credentials/new_double_-r-P.templ,
+	tests/credentials/new_double_-r-V-N.cred.in,
+	tests/credentials/new_double_-r-V-N.templ,
+	tests/credentials/new_double_-r-V.cred.in,
+	tests/credentials/new_double_-r-V.templ,
+	tests/credentials/new_double_-r.cred.in,
+	tests/credentials/new_double_-r.templ,
+	tests/credentials/new_double_.cred.in,
+	tests/credentials/new_double_.templ,
+	tests/credentials/new_mixed_-P1-P2.cred.in,
+	tests/credentials/new_mixed_-P1-P2.templ,
+	tests/credentials/new_mixed_-P12.cred.in,
+	tests/credentials/new_mixed_-P12.templ,
+	tests/credentials/new_mixed_1-P2.cred.in,
+	tests/credentials/new_mixed_1-P2.templ,
+	tests/credentials/new_mixed_12.cred.in,
+	tests/credentials/new_mixed_12.templ,
+	tests/credentials/old_credential.cred.in,
+	tests/credentials/old_credential.templ,
+	tests/credentials/{ssh_credential.templ => ssh_credential.cred.in},
+	tests/regenerate_credentials.py: User autoconf instead of make to
+	generate test input files
+
+2020-09-17  Alessio Di Mauro <alessio@yubico.com>
+
+	* pamu2fcfg/Makefile.am: Use correct filename in Makefile.am
+
+2020-09-16  Alessio Di Mauro <alessio@yubico.com>
+
+	* README, man/pam_u2f.8.txt: Fix typo
+
+2020-09-03  Alessio Di Mauro <alessio@yubico.com>
+
+	* README: Replace Debian with Ubuntu in the documentation
+
+2020-09-03  Alessio Di Mauro <alessio@yubico.com>
+
+	* README: Mention minimum libfido2 version required
+
+2020-09-03  Alessio Di Mauro <alessio@yubico.com>
+
+	* README: Fix dependency name
+
+2020-08-27  Alessio Di Mauro <alessio@yubico.com>
+
+	* README: Fix code block formatting
+
+2020-08-26  Alessio Di Mauro <alessio@yubico.com>
+
+	* README, man/pam_u2f.8.txt, man/pamu2fcfg.1.txt: Update
+	documentation Reflect the changes for the transition from libu2f to libfido2.  Add
+	some text on the SSH format.  Update manpages.  Relates to #140
+
+2020-08-14  Alessio Di Mauro <alessio@yubico.com>
+
+	* tests/get_devices.c: Indent
+
+2020-08-14  Alessio Di Mauro <alessio@yubico.com>
+
+	* build-aux/ci/build-linux.sh: Update Travis build to not do chown
+
+2020-08-14  Alessio Di Mauro <alessio@yubico.com>
+
+	* .gitignore, tests/Makefile.am, tests/credentials/new_,
+	tests/credentials/new_-N, tests/credentials/new_-N.templ,
+	tests/credentials/new_-P, tests/credentials/new_-P-N,
+	tests/credentials/new_-P-N.templ, tests/credentials/new_-P-V,
+	tests/credentials/new_-P-V-N, tests/credentials/new_-P-V-N.templ,
+	tests/credentials/new_-P-V.templ, tests/credentials/new_-P.templ,
+	tests/credentials/new_-V, tests/credentials/new_-V-N,
+	tests/credentials/new_-V-N.templ, tests/credentials/new_-V.templ,
+	tests/credentials/new_-r, tests/credentials/new_-r-N,
+	tests/credentials/new_-r-N.templ, tests/credentials/new_-r-P,
+	tests/credentials/new_-r-P-N, tests/credentials/new_-r-P-N.templ,
+	tests/credentials/new_-r-P-V, tests/credentials/new_-r-P-V-N,
+	tests/credentials/new_-r-P-V-N.templ,
+	tests/credentials/new_-r-P-V.templ,
+	tests/credentials/new_-r-P.templ, tests/credentials/new_-r-V,
+	tests/credentials/new_-r-V-N, tests/credentials/new_-r-V-N.templ,
+	tests/credentials/new_-r-V.templ, tests/credentials/new_-r.templ,
+	tests/credentials/new_.templ, tests/credentials/new_double_,
+	tests/credentials/new_double_-N,
+	tests/credentials/new_double_-N.templ,
+	tests/credentials/new_double_-P, tests/credentials/new_double_-P-N,
+	tests/credentials/new_double_-P-N.templ,
+	tests/credentials/new_double_-P-V,
+	tests/credentials/new_double_-P-V-N,
+	tests/credentials/new_double_-P-V-N.templ,
+	tests/credentials/new_double_-P-V.templ,
+	tests/credentials/new_double_-P.templ,
+	tests/credentials/new_double_-V, tests/credentials/new_double_-V-N,
+	tests/credentials/new_double_-V-N.templ,
+	tests/credentials/new_double_-V.templ,
+	tests/credentials/new_double_-r, tests/credentials/new_double_-r-N,
+	tests/credentials/new_double_-r-N.templ,
+	tests/credentials/new_double_-r-P,
+	tests/credentials/new_double_-r-P-N,
+	tests/credentials/new_double_-r-P-N.templ,
+	tests/credentials/new_double_-r-P-V,
+	tests/credentials/new_double_-r-P-V-N,
+	tests/credentials/new_double_-r-P-V-N.templ,
+	tests/credentials/new_double_-r-P-V.templ,
+	tests/credentials/new_double_-r-P.templ,
+	tests/credentials/new_double_-r-V,
+	tests/credentials/new_double_-r-V-N,
+	tests/credentials/new_double_-r-V-N.templ,
+	tests/credentials/new_double_-r-V.templ,
+	tests/credentials/new_double_-r.templ,
+	tests/credentials/new_double_.templ,
+	tests/credentials/new_mixed_-P1-P2,
+	tests/credentials/new_mixed_-P1-P2.templ,
+	tests/credentials/new_mixed_-P12,
+	tests/credentials/new_mixed_-P12.templ,
+	tests/credentials/new_mixed_1-P2,
+	tests/credentials/new_mixed_1-P2.templ,
+	tests/credentials/new_mixed_12,
+	tests/credentials/new_mixed_12.templ,
+	tests/credentials/old_credential,
+	tests/credentials/old_credential.templ,
+	tests/credentials/{ssh_credential => ssh_credential.templ},
+	tests/get_devices.c, tests/regenerate_credentials.py: Fix
+	permissions on tests This change adds a new custom suffix to automake and treats
+	credentials as templates. Upon running the tests actual credential
+	files (.cred) will be generated with the current user name.  Similarly the tests will read the user name from the environment and
+	use that value.
+
+2020-07-24  Alessio Di Mauro <alessio@yubico.com>
+
+	* tests/get_devices.c, util.c: Appease clang-format
+
+2020-07-24  Alessio Di Mauro <alessio@yubico.com>
+
+	* util.c: Rework the logic to parse authentication files Make sure that each credential is always parsed correctly including
+	attributes and lack thereof (for the old format).
+
+2020-07-24  Alessio Di Mauro <alessio@yubico.com>
+
+	* tests/credentials/new_, tests/credentials/new_-N,
+	tests/credentials/new_-P, tests/credentials/new_-P-N,
+	tests/credentials/new_-P-V, tests/credentials/new_-P-V-N,
+	tests/credentials/new_-V, tests/credentials/new_-V-N,
+	tests/credentials/new_-r, tests/credentials/new_-r-N,
+	tests/credentials/new_-r-P, tests/credentials/new_-r-P-N,
+	tests/credentials/new_-r-P-V, tests/credentials/new_-r-P-V-N,
+	tests/credentials/new_-r-V, tests/credentials/new_-r-V-N,
+	tests/credentials/new_credential, tests/credentials/new_double_,
+	tests/credentials/new_double_-N, tests/credentials/new_double_-P,
+	tests/credentials/new_double_-P-N,
+	tests/credentials/new_double_-P-V,
+	tests/credentials/new_double_-P-V-N,
+	tests/credentials/new_double_-V, tests/credentials/new_double_-V-N,
+	tests/credentials/new_double_-r, tests/credentials/new_double_-r-N,
+	tests/credentials/new_double_-r-P,
+	tests/credentials/new_double_-r-P-N,
+	tests/credentials/new_double_-r-P-V,
+	tests/credentials/new_double_-r-P-V-N,
+	tests/credentials/new_double_-r-V,
+	tests/credentials/new_double_-r-V-N,
+	tests/credentials/new_mixed_-P1-P2,
+	tests/credentials/new_mixed_-P12, tests/credentials/new_mixed_1-P2,
+	tests/credentials/new_mixed_12, tests/get_devices.c: Add a whole
+	bunch of test cases Parsing combination of single and multiple devices in one file with
+	different sets of attributes
+
+2020-07-24  Alessio Di Mauro <alessio@yubico.com>
+
+	* tests/regenerate_credentials.py: Add a script to generate test
+	cases
+
+2020-01-08  Alessio Di Mauro <alessio@yubico.com>
+
+	* pamu2fcfg/pamu2fcfg.c, util.c: Indent
+
+2020-01-08  Alessio Di Mauro <alessio@yubico.com>
+
+	* util.c: Check against "+attribute" rather "attribute"
+
+2020-01-08  Alessio Di Mauro <alessio@yubico.com>
+
+	* util.c: Don't set uv when setting PIN
+
+2020-01-08  Alessio Di Mauro <alessio@yubico.com>
+
+	* util.c: Use fido_opt_t in do_manual_authentication
+
+2020-01-08  Alessio Di Mauro <alessio@yubico.com>
+
+	* pamu2fcfg/pamu2fcfg.c: Use a fido_opt_t in pamu2fcfg
+
+2020-01-07  Alessio Di Mauro <alessio@yubico.com>
+
+	* util.c: Update SSH flags to latest version and attributes
+	management
+
+2020-01-07  Alessio Di Mauro <alessio@yubico.com>
+
+	* util.c: Fix print formatting on decoded application field
+
+2019-12-20  Alessio Di Mauro <alessio@yubico.com>
+
+	* tests/get_devices.c: Indent
+
+2019-12-20  Alessio Di Mauro <alessio@yubico.com>
+
+	* build-aux/ci/build-linux.sh: Change ownership of the test
+	credential files
+
+2019-12-19  Alessio Di Mauro <alessio@yubico.com>
+
+	* tests/Makefile.am: Change tests harness to run serial tests This helps when printing results in the CI
+
+2019-12-19  Alessio Di Mauro <alessio@yubico.com>
+
+	* tests/basic.c, tests/get_devices.c: Indent tests
+
+2019-12-19  Alessio Di Mauro <alessio@yubico.com>
+
+	* tests/Makefile.am, tests/credentials/new_credential,
+	tests/credentials/old_credential, tests/credentials/ssh_credential,
+	tests/get_devices.c: Add a test for parsing credential files
+
+2019-12-19  Alessio Di Mauro <alessio@yubico.com>
+
+	* util.c: Fixup old format compatibility
+
+2019-12-19  Alessio Di Mauro <alessio@yubico.com>
+
+	* util.c: Fix padding check for SSH format
+
+2019-12-18  Alessio Di Mauro <alessio@yubico.com>
+
+	* pam-u2f.c: Indent
+
+2019-12-18  Alessio Di Mauro <alessio@yubico.com>
+
+	* pam-u2f.c, util.h: Add default authfile for sshformat
+
+2019-12-17  Alessio Di Mauro <alessio@yubico.com>
+
+	* util.c: Initialize decoded_initial to NULL
+
+2019-12-17  Alessio Di Mauro <alessio@yubico.com>
+
+	* util.c: Make sure to save one \0 byte in buf
+
+2019-12-17  Alessio Di Mauro <alessio@yubico.com>
+
+	* util.c: Drop unnecessary sizeof(char)
+
+2019-12-17  Alessio Di Mauro <alessio@yubico.com>
+
+	* util.c: Indent
+
+2019-12-17  Alessio Di Mauro <alessio@yubico.com>
+
+	* util.c: Use a define for user presence
+
+2019-12-17  Alessio Di Mauro <alessio@yubico.com>
+
+	* util.c: Check strdup return value when allocation attributes
+
+2019-12-17  Alessio Di Mauro <alessio@yubico.com>
+
+	* util.c: Check buf length in parse_ssh_format more thoroughly
+
+2019-12-17  Alessio Di Mauro <alessio@yubico.com>
+
+	* util.c: Use calloc to allocate buf
+
+2019-12-17  Alessio Di Mauro <alessio@yubico.com>
+
+	* util.c: Indent
+
+2019-12-17  Alessio Di Mauro <alessio@yubico.com>
+
+	* pam-u2f.c, util.c, util.h: Add initial support for SSH format
+
+2019-12-04  Alessio Di Mauro <alessio@yubico.com>
+
+	* pam-u2f.c, util.c, util.h: Split parsing of native format to a
+	function and add basics for ssh format
+
+2020-08-06  Alessio Di Mauro <a-dma@users.noreply.github.com>
+
+	* : Merge pull request #153 from herrjemand/patch-1 Added mention of FIDO2 support
+
+2020-07-28  Alessio Di Mauro <a-dma@users.noreply.github.com>
+
+	* : Merge pull request #151 from Yubico/update-fqdn Update scan action with correct image fqdn
+
+2020-06-23  Gabriel Kihlman <g.kihlman@yubico.com>
+
+	* : Merge pull request #148 from Yubico/scan Github Actions: do not run scan if missing credentials
+
+2020-03-05  Alessio Di Mauro <alessio@yubico.com>
+
+	* : Merge PR #142
+
+2020-03-04  Christos Zoulas <christos@zoulas.com>
+
+	* pam-u2f.c: Include <stdint.h> for intptr_t on linux
+
+2020-03-03  Christos Zoulas <christos@zoulas.com>
+
+	* util.c: - explicitly check against NULL to avoid some compiler warnings - fix const cast-away.  - Since we include <syslog.h> unconditionally allow syslog use on
+	  other unixes, not just linux. We check that we provide a LOG_DEBUG
+	macro instead.
+
+2020-03-03  Christos Zoulas <christos@zoulas.com>
+
+	* util.h: Provide an empty statement for non-debugging code.
+
+2020-03-03  Christos Zoulas <christos@zoulas.com>
+
+	* pam-u2f.c: - move PAM_MODUTIL_DEF_PRIVS below parse_cfg, so that
+	  cfg->debug_file gets initialized first (this is c99, statement
+	before decl).  - introduce free_const() macro to avoid const cast-away warnings.  - Add PAM_MODULE_ENTRY() macro used by OpenPAM.
+
+2020-03-03  Christos Zoulas <christos@zoulas.com>
+
+	* drop_privs.h: - cast -1 to the appropriate types - split lines
+
+2020-03-03  Christos Zoulas <christos@zoulas.com>
+
+	* b64.c: Avoid const cast-away
+
+2020-03-02  Alessio Di Mauro <a-dma@users.noreply.github.com>
+
+	* : Merge pull request #141 from Yubico/boolornot Check explicitly for FIDO_OPT_TRUE
+
+2020-01-17  Gabriel Kihlman <g.kihlman@yubico.com>
+
+	* : Merge pull request #139 from Yubico/scan Re-schedule scans every week
+
+2019-12-28  Gabriel Kihlman <g.kihlman@yubico.com>
+
+	* : Merge pull request #136 from Yubico/scan Adding a static code analysis github workflow
+
+2019-12-09  Alessio Di Mauro <a-dma@users.noreply.github.com>
+
+	* : Merge pull request #133 from Yubico/fix_booleans Fix and clarify the behavior of UV, UP and PIN
+
+2019-12-05  pedro martelletto <pedro@yubico.com>
+
+	* README, man/pam_u2f.8.txt, man/pamu2fcfg.1.txt: documentation bits
+	for userpresence, userverification, and pinverification.
+
+2019-12-04  Alessio Di Mauro <alessio@yubico.com>
+
+	* util.c: Fix formatting
+
+2019-12-04  Alessio Di Mauro <alessio@yubico.com>
+
+	* pam-u2f.c, util.c: Map fido_opt_t to tristate values in the
+	configuration
+
+2019-12-04  Alessio Di Mauro <alessio@yubico.com>
+
+	* build-aux/ci/build-bionic-gcc7.sh: Remove "set -x" before calling
+	clang_format It makes the otput more readable if there are formatting errors
+
+2019-12-03  Alessio Di Mauro <a-dma@users.noreply.github.com>
+
+	* : Merge pull request #132 from Yubico/update_libfido2 Update libfido2
+
+2019-12-03  Alessio Di Mauro <alessio@yubico.com>
+
+	* .travis.yml: Name the individual Travis builds
+
+2019-12-02  Alessio Di Mauro <alessio@yubico.com>
+
+	* build-aux/ci/build-linux.sh, build-aux/ci/build-osx.sh: Don't use
+	`&&` together with `set -e` in the CI scripts
+
+2019-12-02  Alessio Di Mauro <alessio@yubico.com>
+
+	* configure.ac, pamu2fcfg/pamu2fcfg.c, util.c: Update to libfido2 >=
+	1.2.0 Update dependencies Fix deprecated functions
+
+2019-12-02  Alessio Di Mauro <alessio@yubico.com>
+
+	* pamu2fcfg/Makefile.am: Add libcrypto dependency to pamu2fcfg
+
+2019-10-10  Alessio Di Mauro <alessio@yubico.com>
+
+	* man/pam_u2f.8.txt: man: drop backticks
+
+2019-10-10  Alessio Di Mauro <alessio@yubico.com>
+
+	* : Merge PR #127
+
+2019-10-09  Alessio Di Mauro <alessio@yubico.com>
+
+	* build-aux/ci/format-code.sh: build: correctly escape grep pattern
+
+2019-10-09  Alessio Di Mauro <alessio@yubico.com>
+
+	* : Merge PR #126
+
+2019-10-09  corbolais <corbolais@gmail.com>
+
+	* README, man/pam_u2f.8.txt: Clarify usage of individual user
+	mapping file.  Signed-off-by: corbolais <corbolais@gmail.com>
+
+2019-10-09  corbolais <corbolais@gmail.com>
+
+	* README, man/pam_u2f.8.txt: Add accidently removed sentence back
+	in, update man page.  Signed-off-by: corbolais <corbolais@gmail.com>
+
+2019-10-09  Alessio Di Mauro <alessio@yubico.com>
+
+	* : Merge PR #125
+
+2019-10-08  corbolais <corbolais@gmail.com>
+
+	* pam-u2f.c: appease clang_format, again Signed-off-by: corbolais <corbolais@gmail.com>
+
+2019-10-08  corbolais <corbolais@gmail.com>
+
+	* pam-u2f.c: avoid call to strncmp Signed-off-by: corbolais <corbolais@gmail.com>
+
+2019-10-07  corbolais <corbolais@gmail.com>
+
+	* pam-u2f.c: cherry-pick de9731c7423554bcb2749242c384c6764992db8c,
+	undo ce3df86046d111174c46da6f6a81e321553faa5b, formatting changes to
+	please clang format.  Signed-off-by: corbolais <corbolais@gmail.com>
+
+2019-10-05  corbolais <corbolais@gmail.com>
+
+	* README, pam-u2f.c: A different per user file may be specified.
+	Doc: state that the path must be relative to $HOME/. Implicitely set
+	openasuser.  Signed-off-by: corbolais <corbolais@gmail.com>
+
+2019-08-23  Alessio Di Mauro <alessio@yubico.com>
+
+	* build-aux/ci/build-bionic-gcc7.sh: Set commit range for new
+	branches
+
+2019-08-23  Alessio Di Mauro <alessio@yubico.com>
+
+	* build-aux/ci/format-code.sh: Drop slashes and change exit to
+	return
+
+2019-08-22  Alessio Di Mauro <alessio@yubico.com>
+
+	* build-aux/ci/format-code.sh: Use grep -e to keep Travis happy
+
+2019-08-22  Alessio Di Mauro <alessio@yubico.com>
+
+	* build-aux/ci/format-code.sh: Fix format-code.sh
+
+2019-08-22  Alessio Di Mauro <alessio@yubico.com>
+
+	* .travis.yml, build-aux/ci/build-bionic-gcc7.sh,
+	build-aux/ci/build-linux.sh, build-aux/ci/build-osx.sh: Run
+	format-code.sh only on a single Travis build
+
+2019-08-22  Alessio Di Mauro <alessio@yubico.com>
+
+	* .travis.yml: Update dist in .travis-ci.yml
+
+2019-08-22  Alessio Di Mauro <alessio@yubico.com>
+
+	* b64.c, drop_privs.c, drop_privs.h, explicit_bzero.c, pam-u2f.c,
+	pamu2fcfg/pamu2fcfg.c, util.c, util.h: Apply clang-format
+
+2019-08-22  Alessio Di Mauro <alessio@yubico.com>
+
+	* build-aux/ci/format-code.sh: Add format-code.sh
+
+2019-08-22  Alessio Di Mauro <alessio@yubico.com>
+
+	* build-aux/ci/build-linux.sh, build-aux/ci/build-osx.sh: Check code
+	format during a Travis build
+
+2019-08-22  Alessio Di Mauro <alessio@yubico.com>
+
+	* .clang-format, Makefile.am: Update clang-format
+
+2019-08-13  Alessio Di Mauro <alessio@yubico.com>
+
+	* .travis.yml, build-aux/ci/build-bionic-clang7.sh,
+	build-aux/ci/build-bionic-clang8.sh,
+	build-aux/ci/build-bionic-gcc7.sh,
+	build-aux/ci/build-bionic-gcc8.sh,
+	build-aux/ci/build-bionic-gcc9.sh, build-aux/ci/build-linux.sh,
+	build-aux/ci/build-osx.sh, build-aux/ci/build-osx11-clang.sh,
+	build-aux/ci/build-osx9.4-clang.sh,
+	build-aux/ci/build-xenial-clang7.sh,
+	build-aux/ci/build-xenial-clang8.sh,
+	build-aux/ci/build-xenial-gcc7.sh,
+	build-aux/ci/build-xenial-gcc8.sh,
+	build-aux/ci/build-xenial-gcc9.sh, build-aux/travis,
+	build-aux/travis-build-linux, build-aux/travis-build-osx,
+	explicit_bzero.c, pamu2fcfg/{readpassphrase.h =>
+	_readpassphrase.h}, pamu2fcfg/pamu2fcfg.c,
+	pamu2fcfg/readpassphrase.c: Update .travis.yml to build using
+	libfido2
+
+2019-07-31  Alessio Di Mauro <a-dma@users.noreply.github.com>
+
+	* : Merge #121 Switch to using vsyslog/vfprintf in the linux case as well
+
+2019-07-22  pedro martelletto <pedro@yubico.com>
+
+	* Makefile.am: AM_CPPFLAGS: don't pull ../ when building from the
+	top dir
+
+2019-07-05  Alessio Di Mauro <alessio@yubico.com>
+
+	* : Merge PR #119
+
+2019-07-04  Michael Beaumont <mjboamail@gmail.com>
+
+	* pam-u2f.c, util.c, util.h: Add "cue_prompt" option to set text
+	shown with cue
+
+2019-06-18  Gabriel Kihlman <g.kihlman@yubico.com>
+
+	* pam-u2f.c: Check the correct variable, openasuser has not been set
+	here yet
+
+2019-06-12  Alessio Di Mauro <alessio@alessiodimauro.com>
+
+	* : Merge PR #98
+
+2019-03-28  pedro martelletto <pedro@yubico.com>
+
+	* tests/bionic/Dockerfile: Dockerfile: adapt to life w/o hidapi;
+	install gengetopt
+
+2019-01-19  Francois Gervais <francoisgervais@gmail.com>
+
+	* util.c: Ask for user presence based on PAM module flag Ignore per-key presence configuration
+
+2019-01-19  Francois Gervais <francoisgervais@gmail.com>
+
+	* pam-u2f.c, util.h: Add 'userpresence' PAM module flag
+
+2018-06-15  pedro martelletto <pedro@yubico.com>
+
+	* util.c: Have do_manual_authentication() work with fido2-assert.
+
+2018-06-07  pedro martelletto <pedro@yubico.com>
+
+	* util.c: Reflect changes in libfido2's API
+
+2018-05-17  pedro martelletto <pedro@yubico.com>
+
+	* tests/bionic/Dockerfile, tests/bionic/README, tests/bionic/run.sh: 
+	Add a set of core containerized tests
+
+2018-05-16  pedro martelletto <pedro@yubico.com>
+
+	* Makefile.am, util.c, util.h: Add backwards-compatibility with
+	pre-FIDO2 authorization files.
+
+2018-05-15  pedro martelletto <pedro@yubico.com>
+
+	* util.c: Handle resident keys, user verification and COSE RS256 in
+	do_manual_authentication().
+
+2018-05-15  pedro martelletto <pedro@yubico.com>
+
+	* util.c: Handle resident keys, user verification and COSE RS256 in
+	do_authentication().
+
+2018-05-15  pedro martelletto <pedro@yubico.com>
+
+	* pam-u2f.c: Zero the devices array on allocation.
+
+2018-05-15  pedro martelletto <pedro@yubico.com>
+
+	* util.c, util.h: Change get_devices_from_authfile() to parse the
+	new format generated by pamu2fcfg.  This new format includes two extra fields: one denoting a
+	credential's COSE type, and a second representing a credential's
+	attributes (only '+' or '-' to enable/disable user verification for
+	now). The meaning of the key handle field has also been extended:
+	'*' can now be used to tell pam-u2f that a given credential is
+	resident.
+
+2018-05-15  pedro martelletto <pedro@yubico.com>
+
+	* .gitignore, pamu2fcfg/cmdline.c, pamu2fcfg/cmdline.h: Zap
+	autogenerated files.
+
+2018-05-15  pedro martelletto <pedro@yubico.com>
+
+	* pamu2fcfg/cmdline.ggo, pamu2fcfg/pamu2fcfg.c: Add -t, -r and -N
+	options to pamu2fcfg.  - option t allows the COSE type of a credential to be specified; - option r allows a resident credential to be created; - option N enables verification without the user's presence.
+
+2018-05-08  pedro martelletto <pedro@yubico.com>
+
+	* util.c: Convert do_manual_authentication() to libfido2.
+
+2018-05-08  pedro martelletto <pedro@yubico.com>
+
+	* util.c: Convert do_authentication() to libfido2.  Introduce an auxiliary find_authenticator() function to iterate over
+	authenticator devices configured on the system and find the one
+	containing the credential being authenticated.
+
+2018-05-08  pedro martelletto <pedro@yubico.com>
+
+	* Makefile.am, util.c, util.h: Convert get_devices_from_authfile()
+	to libfido2.
+
+2018-05-08  pedro martelletto <pedro@yubico.com>
+
+	* pamu2fcfg/Makefile.am, pamu2fcfg/pamu2fcfg.c: Convert pamu2fcfg to
+	libfido2.
+
+2018-05-08  pedro martelletto <pedro@yubico.com>
+
+	* util.c, util.h: Define random_bytes().  random_bytes() is an auxiliary function to read an arbitrary number
+	of bytes from a system's PRNG, to be used in upcoming commits.
+
+2018-05-08  pedro martelletto <pedro@yubico.com>
+
+	* configure.ac: Detect libfido2 and enable subdir-objects.
+
+2018-05-08  pedro martelletto <pedro@yubico.com>
+
+	* Makefile.am, b64.c, b64.h, configure.ac: Add base64
+	encoding/decoding functions.  To be used in the representation of key handles and public keys in
+	upcoming commits.
+
+2019-06-04  Alessio Di Mauro <alessio@alessiodimauro.com>
+
+	* NEWS, configure.ac: Bump version
+
+2019-06-04  Alessio Di Mauro <alessio@alessiodimauro.com>
+
+	* NEWS: Update NEWS file
+
+2019-06-04  Alessio Di Mauro <alessio@alessiodimauro.com>
+
+	* man/pam_u2f.8.txt: Update manual
+
+2019-06-04  Alessio Di Mauro <alessio@alessiodimauro.com>
+
+	* : Merge PR #116
+
+2019-06-04  Gabriel Kihlman <g.kihlman@yubico.com>
+
+	* Makefile.am, README, configure.ac, drop_privs.c, drop_privs.h,
+	pam-u2f.c: Drop privileges by default when opening user-related
+	files The module is typically executed as root and would sometimes open
+	files or follow symlinks that could be controlled from the outside.  Drop privileges to the target user before opening any files.  Fixes CVE-2019-12209.  Thanks to Matthias Gerstner of the SUSE Security Team for reporting
+	the issue.
+
+2019-06-04  Gabriel Kihlman <g.kihlman@yubico.com>
+
+	* pam-u2f.c, util.c, util.h: Do not leak file descriptor when doing
+	exec When opening a custom debug file, the descriptor would stay open
+	when calling exec and leak to the child process.  Make sure all files are opened with close-on-exec.  This fixes CVE-2019-12210.  Thanks to Matthias Gerstner of the SUSE Security Team for reporting
+	the issue.
+
+2019-04-01  Alessio Di Mauro <a-dma@users.noreply.github.com>
+
+	* : Merge pull request #115 from Yubico/malloc_debug Handle malloc failing when logging
+
+2018-07-23  Alessio Di Mauro <alessio@yubico.com>
+
+	* README: Add more explicit dependencies to README Closes #101
+
+2018-05-17  Alessio Di Mauro <alessio@alessiodimauro.com>
+
+	* man/pam_u2f.8.txt: Fix typo in man page
+
+2018-05-17  Alessio Di Mauro <alessio@alessiodimauro.com>
+
+	* : Merge  PR 95
+
+2018-05-15  Alessio Di Mauro <alessio@alessiodimauro.com>
+
+	* NEWS, configure.ac: Bump version
+
+2018-05-15  Alessio Di Mauro <alessio@alessiodimauro.com>
+
+	* NEWS: Update NEWS file
+
+2018-05-04  Alessio Di Mauro <alessio@alessiodimauro.com>
+
+	* : Merge PR #92
+
+2018-05-02  Alessio Di Mauro <alessio@alessiodimauro.com>
+
+	* : Merge PR #91
+
+2018-04-30  CJ Oster <cjo@redhat.com>
+
+	* man/pam_u2f.8.txt, pam-u2f.c, util.c, util.h: Adds "nodetect"
+	option.
+
+2018-04-24  Alessio Di Mauro <alessio@yubico.com>
+
+	* util.c: fixup some minor memory leaks
+
+2018-04-24  Alessio Di Mauro <alessio@yubico.com>
+
+	* pam-u2f.c, util.c: Make sure to free origin/appid/auth_file if
+	allocated
+
+2018-04-24  Alessio Di Mauro <alessio@yubico.com>
+
+	* pam-u2f.c, util.h: Make authpending_file const and cast it during
+	free
+
+2018-04-24  Alessio Di Mauro <alessio@yubico.com>
+
+	* COPYING, Makefile.am, configure.ac, pam-u2f.c,
+	pamu2fcfg/Makefile.am, pamu2fcfg/cmdline.ggo,
+	pamu2fcfg/pamu2fcfg.c, tests/Makefile.am, tests/basic.c, util.c,
+	util.h: Update copyright
+
+2018-04-24  Alessio Di Mauro <alessio@yubico.com>
+
+	* pam-u2f.c: Default should_free_authpending_file to 0
+
+2018-04-24  Alessio Di Mauro <alessio@yubico.com>
+
+	* : Merge PR #89
+
+2018-04-18  Alessio Di Mauro <alessio@yubico.com>
+
+	* NEWS, configure.ac: Bump version
+
+2018-04-18  Alessio Di Mauro <alessio@yubico.com>
+
+	* NEWS: Update NEWS file
+
+2018-04-18  Alessio Di Mauro <alessio@yubico.com>
+
+	* util.c: Indent
+
+2018-04-18  Alessio Di Mauro <alessio@yubico.com>
+
+	* : Merge PR #85
+
+2018-04-18  CJ Oster <cjo@redhat.com>
+
+	* util.c, util.h: Avoids cueing user if no suitable U2F device is
+	available.
+
+2018-04-17  CJ Oster <cjo@redhat.com>
+
+	* util.c: Fixing this bug too.
+
+2018-04-16  CJ Oster <cjo@redhat.com>
+
+	* pam-u2f.c, util.c, util.h: Fixes syslog crash in some applications
+
+2018-04-16  Alessio Di Mauro <alessio@yubico.com>
+
+	* NEWS, configure.ac: Bump version
+
+2018-04-16  Alessio Di Mauro <alessio@yubico.com>
+
+	* NEWS: Update NEWS file
+
+2018-04-16  Alessio Di Mauro <alessio@yubico.com>
+
+	* util.c: Fixup style nits
+
+2018-04-16  Alessio Di Mauro <alessio@yubico.com>
+
+	* util.c: Use BUFSIZE instead of a hard constant
+
+2018-04-16  Alessio Di Mauro <alessio@yubico.com>
+
+	* README: Drop blurb about project being rewritten That seems to have slowed for the time being, reinstating this
+	project.
+
+2018-04-16  Alessio Di Mauro <alessio@yubico.com>
+
+	* README: Fixup README to reflect the manpage
+
+2018-04-16  Alessio Di Mauro <alessio@yubico.com>
+
+	* : Merge PR #84
+
+2018-04-14  CJ Oster <cjo@redhat.com>
+
+	* README, man/pam_u2f.8.txt, pam-u2f.c, util.c, util.h: Adds syslog
+	to debug_file options.
+
+2017-06-16  Alessio Di Mauro <alessio@yubico.com>
+
+	* README: Add message about project rewrite to README
+
+2017-04-04  Alessio Di Mauro <alessio@yubico.com>
+
+	* build-aux/travis-build-osx: brew unlink pkg-config to keep Travis
+	happy
+
+2017-04-04  Alessio Di Mauro <alessio@yubico.com>
+
+	* README, man/pam_u2f.8.txt, pam-u2f.c, util.c, util.h: Add
+	`debug_file` option to log debug to a file rather than to STDOUT
+
+2017-04-04  Alessio Di Mauro <alessio@yubico.com>
+
+	* README: Fix formatting in README
+
+2017-03-15  Alessio Di Mauro <alessio@yubico.com>
+
+	* : Merge #70: code cleanup and more warnings
+
+2017-03-14  Simon Ruderich <simon@ruderich.org>
+
+	* util.c: get_devices_from_authfile: fix incorrect cast Shouldn't be an issue but makes -Wconversion happy.
+
+2017-03-14  Simon Ruderich <simon@ruderich.org>
+
+	* pam-u2f.c: pam_sm_authenticate: authfile_dir_len must be size_t
+
+2017-03-14  Simon Ruderich <simon@ruderich.org>
+
+	* util.c: do_manual_authentication: simplify for-loop condition Checking retval in two places is confusing. Use a separate if with
+	break to make the intent more clear.
+
+2017-03-14  Simon Ruderich <simon@ruderich.org>
+
+	* pam-u2f.c: pam_sm_authenticate: use goto done in two more places It's confusing that these are the only places where return is used.  This changes the behavior if alwaysok is true and either malloc() or
+	pam_get_user() fails. Previously it would reject logins, with this
+	change it allows them. However this shouldn't affect many setups as
+	alwaysok is most likely not used.
+
+2017-03-14  Simon Ruderich <simon@ruderich.org>
+
+	* pam-u2f.c: pam_sm_authenticate: auth_file: don't strdup() the
+	allocated buffer
+
+2017-03-14  Simon Ruderich <simon@ruderich.org>
+
+	* pam-u2f.c, util.c: Use snprintf() where possible The code in pam_sm_authenticate() uses proper sizes, but snprintf()
+	is generally a safer approach than strcpy()/strcat().  The first sprintf() in do_manual_authentication() could potentially
+	overflow the buffer if origin is very large.
+
+2017-03-14  Simon Ruderich <simon@ruderich.org>
+
+	* pam-u2f.c: pam_sm_authenticate: move strdup() checks into the
+	surrounding if Makes it more obvious that this is the only code path that can reach
+	the check.
+
+2017-03-14  Simon Ruderich <simon@ruderich.org>
+
+	* pam-u2f.c: pam_sm_authenticate: remove checks for strcpy strcpy(3) never fails.
+
+2017-03-14  Alessio Di Mauro <alessio@yubico.com>
+
+	* : Merge #67, fixes to get_devices_from_authfile
+
+2017-03-07  Simon Ruderich <simon@ruderich.org>
+
+	* util.c: get_devices_from_authfile: remove duplication in error
+	handling Also fix a double-close bug (fclose(opwfile); close(fd)).
+
+2017-03-07  Simon Ruderich <simon@ruderich.org>
+
+	* util.c: get_devices_from_authfile: ensure n_devs is initialized If there's no matching user then n_devs is never initialized but we
+	return 1 to indicate success. A later access to n_devs will result
+	in an undefined read.  Note: This is currently not an issue as the single caller correctly
+	initializes n_devs to 0 but it affected our fuzzing process and it
+	future-proofs possible future callers.
+
+2017-03-07  Simon Ruderich <simon@ruderich.org>
+
+	* util.c: get_devices_from_authfile: check result of sscanf() On failure x might contain uninitialized data which must not be
+	added to the key. Abort instead if this occurs.
+
+2017-03-07  Simon Ruderich <simon@ruderich.org>
+
+	* util.c: get_devices_from_authfile: fix out-of-bounds read Casting a char* into an unsigned int* is undefined behavior and will
+	trigger an out-of-bounds read at the end of the publicKey array.
+
+2017-03-13  Alessio Di Mauro <a-dma@users.noreply.github.com>
+
+	* : Merge pull request #69 from rudis/openasuser Add openasuser option
+
+2017-03-13  Alessio Di Mauro <a-dma@users.noreply.github.com>
+
+	* : Merge pull request #68 from rudis/nouserok-simplify Simplify nouserok checks for missing/malformed authfiles
+
+2017-02-16  Thordur Bjornsson <thorduri@yubico.com>
+
+	* build-aux/travis-build-osx: travis: Skip man page build on osx
+
+2017-02-16  Thordur Bjornsson <thorduri@yubico.com>
+
+	* .travis.yml, build-aux/travis, build-aux/travis-build-linux,
+	build-aux/travis-build-osx: travis: Refactor and support osx
+
+2017-02-16  Thordur Bjornsson <thorduri@yubico.com>
+
+	* README: README: Just make for building `check` is rather useless at present, and breaks on macOS.
+
+2017-02-16  Thordur Bjornsson <thorduri@yubico.com>
+
+	* pam-u2f.c, pamu2fcfg/pamu2fcfg.c, util.c: util, pamu2fcfg: Silence
+	warnings and fixup compares.
+
+2017-02-16  Thordur Bjornsson <thorduri@yubico.com>
+
+	* Makefile.am, configure.ac, m4/ax_check_compile_flag.m4,
+	m4/manywarnings.m4, m4/warnings.m4: ac: Small attempt at
+	modernisation.  Biggest change is dropping the warnings/manywarnings and using
+	AX_CHECK_COMPILE_FLAG to check for an ok-ish set all of the time.
+
+2017-02-16  Thordur Bjornsson <thorduri@yubico.com>
+
+	* pam-u2f.c, pamu2fcfg/pamu2fcfg.c, util.c, util.h: indent: Run the
+	entire shebang through clang-format
+
+2017-02-16  Thordur Bjornsson <thorduri@yubico.com>
+
+	* .clang-format, Makefile.am: indent: Use clang-format
+
+2017-02-16  Thordur Bjornsson <thorduri@yubico.com>
+
+	* README: README: Better links to U2F libs
+
+2017-02-16  Thordur Bjornsson <thorduri@yubico.com>
+
+	* README: README: No need for a continuation in example
+
+2017-02-16  Thordur Bjornsson <thorduri@yubico.com>
+
+	* README: README: Mention registration in Auth blurb.  Do so with a link to obtaining key handles blurb.
+
+2017-02-16  Thordur Bjornsson <thorduri@yubico.com>
+
+	* README: README: Collapse the Introduction blurb
+
+2017-02-16  Thordur Bjornsson <thorduri@yubico.com>
+
+	* README: README: Drop License and portability blurbs
+
+2017-02-16  Thordur Bjornsson <thorduri@yubico.com>
+
+	* BLURB: BLURB: Retire it
+
+2017-02-15  Thordur Bjornsson <thorduri@yubico.com>
+
+	* : commit 8d6767b9981336dfa9454be759262ab1fbc70e35 Merge: ddd3462
+	e935c33 Author: Thordur Bjornsson <thorduri@yubico.com> Date:   Wed
+	Feb 15 14:17:06 2017 +0100
+
+2017-02-15  Thordur Bjornsson <thorduri@yubico.com>
+
+	* README, man/pam_u2f.8.txt: docs: prompt man blurb and README
+	fixups
+
+2017-02-15  Thordur Bjornsson <thorduri@yubico.com>
+
+	* pam-u2f.c: pam: Simplify prompt handling The prior (and now DEFAULT_PROMPT) had a newline in it, rather then
+	trying to preserve that behaviour, just omit the newline.  The PRESS
+	ENTER behaviour even makes this look nicer...
+
+2017-01-08  Reiner Keller <Reiner.Keller@gmx.de>
+
+	* README, pam-u2f.c, util.h: setup individual prompt message for
+	interactive mode
+
+2017-02-15  Thordur Bjornsson <thorduri@yubico.com>
+
+	* configure.ac: ac: Better defaults for PAM module install path.  On darwin (osx, macos) default to /usr/lib/pam, on linux to the same
+	default as before and in all other cases to /usr/lib.
+
+2017-02-15  Thordur Bjornsson <thorduri@yubico.com>
+
+	* : commit 5ef53fdc872885f10c93e0e1103f42511f406b03 Author: Thordur
+	Bjornsson <thorduri@yubico.com> Date:   Wed Feb 15 09:08:07 2017
+	+0100
+
+2017-02-01  Thordur Bjornsson <thorduri@yubico.com>
+
+	* : Merge remote-tracking branch 'origin/pr/56'
+
+2017-01-20  Alessio Di Mauro <a-dma@users.noreply.github.com>
+
+	* : Merge pull request #54 from Yubico/readme-hostname README: Add blurb on appid/origin on dynamic networks
+
+2017-01-17  Thordur Bjornsson <thorduri@yubico.com>
+
+	* README: README: Add blurb on appid/origin on dynamic networks.  Prompted by #42
+
+2017-01-17  Thordur Bjornsson <thorduri@yubico.com>
+
+	* util.c: pam: Fix format specifier
+
+2017-01-17  Thordur Bjornsson <thorduri@yubico.com>
+
+	* pam-u2f.c: pam: Drop _GNU_SOURCE define
+
+2017-01-17  Thordur Bjornsson <thorduri@yubico.com>
+
+	* pamu2fcfg/pamu2fcfg.c: pamu2fcfg: Errors to stderr Tiny style fixup while here.
+
+2017-01-17  Thordur Bjornsson <thorduri@yubico.com>
+
+	* pamu2fcfg/pamu2fcfg.c: pamu2fcfg: Correct flag to u2fh_globla_init
+
+2017-01-17  Thordur Bjornsson <thorduri@yubico.com>
+
+	* util.c: pam: Add missing header
+
+2017-01-17  Thordur Bjornsson <thorduri@users.noreply.github.com>
+
+	* : Merge pull request #52 from Yubico/autoconf-janitorial auto: handful of fixups
+
+2017-01-17  Thordur Bjornsson <thorduri@yubico.com>
+
+	* configure.ac: auto: Fix tyop in configure.ac
+
+2017-01-17  Thordur Bjornsson <thorduri@yubico.com>
+
+	* autogen.sh: auto: Introduce autogen.sh
+
+2016-11-29  Alessio Di Mauro <alessio@alessiodimauro.com>
+
+	* Makefile.am: Skip xmllint on Travis builds
+
+2016-11-29  Alessio Di Mauro <alessio@alessiodimauro.com>
+
+	* pamu2fcfg/Makefile.am: Skip xmllint on Travis builds
+
+2016-11-29  Alessio Di Mauro <alessio@alessiodimauro.com>
+
+	* .travis.yml: Fix a2x in Travis builds
+
+2016-11-29  Alessio Di Mauro <alessio@alessiodimauro.com>
+
+	* .travis.yml: Update .travis.yml to build on Trusty
+
+2016-11-09  Alessio Di Mauro <a-dma@users.noreply.github.com>
+
+	* : Merge pull request #44 from liamjack/master Replace getlogin with getuid and getpwuid to obtain a username
+
+2016-08-02  Alessio Di Mauro <a-dma@users.noreply.github.com>
+
+	* : Merge pull request #40 from nbraud/gnu-source pam-u2f.c: Define _GNU_SOURCE to make secure_getenv(3) available
+
+2016-03-14  Alessio Di Mauro <alessio@yubico.com>
+
+	* README, man/pam_u2f.8.txt, pam-u2f.c: Extend behavior of
+	`nouserok` to include missing or malformed authfiles.  Closes #32.
+
+2016-03-14  Alessio Di Mauro <alessio@yubico.com>
+
+	* man/pamu2fcfg.1.txt, pamu2fcfg/pamu2fcfg.c: Make `appid` default
+	to `origin`.  Closes #34.
+
+2016-03-14  Alessio Di Mauro <alessio@yubico.com>
+
+	* pamu2fcfg/pamu2fcfg.c: Minor fix.
+
+2016-03-14  Alessio Di Mauro <alessio@yubico.com>
+
+	* pamu2fcfg/cmdline.c, pamu2fcfg/cmdline.ggo, pamu2fcfg/cmdline.h,
+	pamu2fcfg/pamu2fcfg.c: Added verbose flag.
+
+2016-03-14  Alessio Di Mauro <alessio@yubico.com>
+
+	* pamu2fcfg/pamu2fcfg.c: Fix typo.
+
+2016-02-02  Alessio Di Mauro <alessio@yubico.com>
+
+	* README: Add pkg-config to the dependencies in README.  Closes #30.
+
+2016-01-07  Alessio Di Mauro <alessio@yubico.com>
+
+	* NEWS, configure.ac: Bump versions.
+
+2016-01-07  Alessio Di Mauro <alessio@yubico.com>
+
+	* NEWS: Version 1.0.4.
+
+2015-12-09  Alessio Di Mauro <alessio@yubico.com>
+
+	* util.c: Remove duplicate definition.  Apparently saving files is a good thing...
+
+2015-12-09  Alessio Di Mauro <alessio@yubico.com>
+
+	* configure.ac, pam-u2f.c, util.c: Use secure_getenv where available
+	(still regarding #28).  If we're on a GNU system use secure_getenv to retrieve environment
+	variables. Otherwise implement a stub fallback that returns nothing.
+
+2015-12-07  Alessio Di Mauro <alessio@yubico.com>
+
+	* util.c: Added authfile owner comparison to address #28.
+
+2015-11-03  Alessio Di Mauro <alessio@yubico.com>
+
+	* README, man/pam_u2f.8.txt: Add warning about using mapping files
+	with encrypted home directories.  Closes #27.
+
+2015-11-02  Alessio Di Mauro <alessio@yubico.com>
+
+	* NEWS, configure.ac: Bump versions.
+
+2015-11-01  Alessio Di Mauro <alessio@yubico.com>
+
+	* pamu2fcfg/pamu2fcfg.c: Check the correct return value in
+	pamu2fcfg.
+
+2015-10-20  Alessio Di Mauro <a-dma@users.noreply.github.com>
+
+	* : Merge pull request #24 from astronouth7303/patch-1 Properly tag `perror()` call for `getlogin()`.
+
+2015-10-07  Alessio Di Mauro <alessio@yubico.com>
+
+	* util.c: Tie messages to debug flag more.
+
+2015-10-06  Alessio Di Mauro <alessio@yubico.com>
+
+	* NEWS, configure.ac: Bump versions.
+
+2015-10-06  Alessio Di Mauro <alessio@yubico.com>
+
+	* NEWS: Version 1.0.2.
+
+2015-09-07  Alessio Di Mauro <a-dma@users.noreply.github.com>
+
+	* : Merge pull request #20 from dlo/patch-1 Fix build issues on OS X
+
+2015-07-14  Alessio Di Mauro <alessio@yubico.com>
+
+	* README: Add badges.
+
+2015-07-14  Alessio Di Mauro <alessio@yubico.com>
+
+	* pam-u2f.c, util.c: Minor fix.
+
+2015-07-13  Alessio Di Mauro <alessio@yubico.com>
+
+	* build-aux/travis: Disable h2a while building libu2f-server in
+	Travis.
+
+2015-07-10  Alessio Di Mauro <alessio@yubico.com>
+
+	* pamu2fcfg/pamu2fcfg.c, util.c: Drop include prefix.
+
+2015-07-10  Alessio Di Mauro <alessio@yubico.com>
+
+	* Makefile.am: More AM flags.
+
+2015-07-10  Alessio Di Mauro <alessio@yubico.com>
+
+	* build-aux/travis: disable silent rules in Travis.
+
+2015-07-10  Alessio Di Mauro <alessio@yubico.com>
+
+	* pam-u2f.c: Add init.
+
+2015-07-10  Alessio Di Mauro <alessio@yubico.com>
+
+	* pam-u2f.c: Typo.
+
+2015-07-10  Alessio Di Mauro <alessio@yubico.com>
+
+	* pam-u2f.c, util.c: Fixed some resource leaks.
+
+2015-06-30  Alessio Di Mauro <alessio@yubico.com>
+
+	* .gitignore, Makefile.am, pam_u2f.8.txt => man/pam_u2f.8.txt,
+	{pamu2fcfg => man}/pamu2fcfg.1.txt, pamu2fcfg/Makefile.am,
+	pamu2fcfg/cmdline.c, pamu2fcfg/cmdline.h: Move manpages to /man.
+
+2015-06-18  Alessio Di Mauro <alessio@yubico.com>
+
+	* NEWS, configure.ac: Bump version to 1.0.2.
+
+2015-06-18  Alessio Di Mauro <alessio@yubico.com>
+
+	* Makefile.am, NEWS: Suppress errors on install hook.  Update NEWS.
+
+2015-06-17  Alessio Di Mauro <alessio@yubico.com>
+
+	* pam_u2f.8.txt: Fix man pages to keep groff (and lintian) happy.
+
+2015-06-17  Alessio Di Mauro <alessio@yubico.com>
+
+	* NEWS, configure.ac: Bump version to 1.0.1.
+
+2015-06-17  Alessio Di Mauro <alessio@yubico.com>
+
+	* NEWS, configure.ac: Bump to version 1.0.0.
+
+2015-06-17  Alessio Di Mauro <alessio@yubico.com>
+
+	* README: Update build instructions.
+
+2015-06-17  Alessio Di Mauro <alessio@yubico.com>
+
+	* util.c: Indent.
+
+2015-04-20  Alessio Di Mauro <alessio@yubico.com>
+
+	* pam-u2f.c, util.c, util.h: Changed cue mode to use converse.
+
+2015-04-20  Alessio Di Mauro <alessio@yubico.com>
+
+	* README, pam_u2f.8.txt: Fixed documentation.
+
+2015-04-20  Alessio Di Mauro <a-dma@users.noreply.github.com>
+
+	* : Merge pull request #16 from mikejonesey/master cue: a reminder to push the yubikey button
+
+2015-04-17  mikejonesey <michael.jones@linux.com>
+
+	* README, pam-u2f.c, util.c, util.h: Standardisation of code, Rename
+	verbose to cue, Set cue to only print out when a valid device is
+	found, Update the readme.
+
+2015-04-17  sys-mjones <michael.jones@tuispecialist.com>
+
+	* README: update readme for change for button reminder.
+
+2015-04-17  sys-mjones <michael.jones@tuispecialist.com>
+
+	* pam-u2f.c, util.h: I use the yubikey for a few pam configs, most
+	it's intuitive to press the button at the right time, but in configs
+	such as sudo where i've enabled the module in sufficient mode, i
+	needed a prompt to remind me to press the button.
+
+2015-03-25  Alessio Di Mauro <alessio@yubico.com>
+
+	* README: Made documentation slightly clearer.
+
+2015-03-20  Alessio Di Mauro <alessio@yubico.com>
+
+	* Makefile.am: Added some cleanup to Makefile.
+
+2015-02-12  Alessio Di Mauro <alessio@yubico.com>
+
+	* README, pam_u2f.8.txt: Fixed docs.
+
+2015-02-12  Alessio Di Mauro <alessio@yubico.com>
+
+	* pam-u2f.c, pamu2fcfg/cmdline.c, pamu2fcfg/cmdline.h, util.c,
+	util.h: Indent.
+
+2015-02-12  Alessio Di Mauro <alessio@yubico.com>
+
+	* util.c: Minor changes.
+
+2015-02-12  Alessio Di Mauro <alessio@yubico.com>
+
+	* util.c: Fixed some warnings.
+
+2015-02-12  Alessio Di Mauro <alessio@yubico.com>
+
+	* pam-u2f.c: Minor fix.
+
+2015-02-12  Alessio Di Mauro <alessio@yubico.com>
+
+	* COPYING, Makefile.am, configure.ac, pam-u2f.c,
+	pamu2fcfg/Makefile.am, pamu2fcfg/cmdline.c, pamu2fcfg/cmdline.ggo,
+	pamu2fcfg/cmdline.h, pamu2fcfg/pamu2fcfg.c, tests/Makefile.am,
+	tests/basic.c, util.c, util.h: Updated copyright years.
+
+2015-02-12  Alessio Di Mauro <a-dma@users.noreply.github.com>
+
+	* : Merge pull request #13 from phoeagon/manual Manual mode & interactive
+
+2015-02-11  phoeagon <phoeagon@gmail.com>
+
+	* README, pam_u2f.8.txt, util.c: fix README
+
+2015-02-11  phoeagon <phoeagon@gmail.com>
+
+	* pam-u2f.c, util.c, util.h: fix manual mode to work with SSH
+
+2015-02-11  phoeagon <phoeagon@gmail.com>
+
+	* pam-u2f.c, util.c, util.h: Use pam_get_item instead for
+	portability
+
+2015-02-11  phoeagon <phoeagon@gmail.com>
+
+	* pam-u2f.c, util.c, util.h: add manual mode
+
+2015-02-11  phoeagon <phoeagon@gmail.com>
+
+	* pam-u2f.c, util.h: add interactive mode
+
+2015-02-09  Alessio Di Mauro <alessio@yubico.com>
+
+	* README, pam_u2f.8.txt: Updated documentation.
+
+2015-02-09  Alessio Di Mauro <alessio@yubico.com>
+
+	* pam-u2f.c, util.h: Use XDG_CONFIG_HOME as default for authfile.
+
+2015-01-20  Alessio Di Mauro <a-dma@users.noreply.github.com>
+
+	* : Merge pull request #8 from catskul/patch-1 Add libpam to dependencies in README.
+
+2015-01-19  catskul <andy.somerville@gmail.com>
+
+	* README: Add --no-install-recommends to avoid pulling in 1GB of
+	extra data ascii doc has a recommends which is gigantic this avoids pulling
+	that in.
+
+2015-01-19  catskul <andy.somerville@gmail.com>
+
+	* README: Add libpam to dependencies in readme
+
+2015-01-16  Alessio Di Mauro <alessio@yubico.com>
+
+	* NEWS, configure.ac: Bump to 0.0.2 (unreleased).
+
+2015-01-16  Alessio Di Mauro <alessio@yubico.com>
+
+	* NEWS, configure.ac: Bump to version 0.0.1.
+
+2015-01-15  Alessio Di Mauro <a-dma@users.noreply.github.com>
+
+	* : Merge pull request #4 from bramvd/master added pam_sm_setcred service function
+
+2015-01-14  Bram Vandoren <bram@bram.be>
+
+	* pam-u2f.c: added pam_sm_setcred service function
+
+2015-01-02  Alessio Di Mauro <alessio@yubico.com>
+
+	* README: Updated README.
+
+2015-01-02  Alessio Di Mauro <alessio@yubico.com>
+
+	* README, pam_u2f.8.txt: Updated documentation.
+
+2015-01-02  Alessio Di Mauro <alessio@yubico.com>
+
+	* pam-u2f.c, util.h: Added nouserok parameter.
+
+2015-01-02  Alessio Di Mauro <alessio@yubico.com>
+
+	* pam-u2f.c: Always fail after error in authentication.
+
+2014-12-23  Henrik Stråth <minisu@users.noreply.github.com>
+
+	* README: Update README
+
+2014-12-17  Alessio Di Mauro <alessio@yubico.com>
+
+	* Makefile.am, README: Corrected README.
+
+2014-12-16  Alessio Di Mauro <alessio@yubico.com>
+
+	* Makefile.am: More fix to Makefile.am.
+
+2014-12-16  Alessio Di Mauro <alessio@yubico.com>
+
+	* NEWS: Updated NEWS.
+
+2014-12-16  Alessio Di Mauro <alessio@yubico.com>
+
+	* Makefile.am, pamu2fcfg/Makefile.am: Cleaned release target.
+
+2014-12-16  Alessio Di Mauro <alessio@yubico.com>
+
+	* Makefile.am: Changed repo variable name.
+
+2014-12-16  Alessio Di Mauro <alessio@yubico.com>
+
+	* pam-u2f.c, util.c: Indent.
+
+2014-12-16  Alessio Di Mauro <alessio@yubico.com>
+
+	* README: Fixed link in AsciiDoc.
+
+2014-12-15  Alessio Di Mauro <alessio@yubico.com>
+
+	* .travis.yml: Added more asciidoc related packets to Travis build.
+
+2014-12-15  Alessio Di Mauro <alessio@yubico.com>
+
+	* build-aux/travis: Added more ldconfig.
+
+2014-12-15  Alessio Di Mauro <alessio@yubico.com>
+
+	* .travis.yml: Added check to Travis build.
+
+2014-12-15  Alessio Di Mauro <alessio@yubico.com>
+
+	* build-aux/travis: Permissions.
+
+2014-12-15  Alessio Di Mauro <alessio@yubico.com>
+
+	* .travis.yml: Removed libhidapi from Travis build.
+
+2014-12-15  Alessio Di Mauro <alessio@yubico.com>
+
+	* .travis.yml, build-aux/travis: Added travis build.
+
+2014-12-15  Alessio Di Mauro <alessio@yubico.com>
+
+	* Makefile.am, pamu2fcfg/Makefile.am: Fixed Makefile.
+
+2014-12-12  Alessio Di Mauro <alessio@yubico.com>
+
+	* configure.ac: Fixed typo in configure.ac.
+
+2014-12-12  Alessio Di Mauro <alessio@yubico.com>
+
+	* README: Updated README.
+
+2014-12-12  Alessio Di Mauro <alessio@yubico.com>
+
+	* pamu2fcfg/pamu2fcfg.c: Removed linebreak at the end of the final
+	printout.
+
+2014-12-12  Alessio Di Mauro <alessio@yubico.com>
+
+	* .gitignore, pamu2fcfg/cmdline.c, pamu2fcfg/cmdline.ggo,
+	pamu2fcfg/cmdline.h, pamu2fcfg/pamu2fcfg.1.txt,
+	pamu2fcfg/pamu2fcfg.c: Added man page.
+
+2014-12-12  Alessio Di Mauro <alessio@yubico.com>
+
+	* pamu2fcfg/pamu2fcfg.c: Improved timout presentation.
+
+2014-12-12  Alessio Di Mauro <alessio@yubico.com>
+
+	* Makefile.am, pamu2fcfg/cmdline.c, pamu2fcfg/cmdline.h,
+	pamu2fcfg/pamu2fcfg.c: Indent.
+
+2014-12-12  Alessio Di Mauro <alessio@yubico.com>
+
+	* .gitignore, Makefile.am, configure.ac, pamu2fcfg/Makefile.am,
+	pamu2fcfg/cmdline.c, pamu2fcfg/cmdline.ggo, pamu2fcfg/cmdline.h,
+	pamu2fcfg/pamu2fcfg.c: Added first version of the registration tool.
+
+2014-12-12  Alessio Di Mauro <alessio@yubico.com>
+
+	* pam-u2f.c, util.c: Fixed some warnings.
+
+2014-12-12  Alessio Di Mauro <alessio@yubico.com>
+
+	* README, pam-u2f.c, pam_u2f.8.txt, util.h: Changed default origin
+	and appid to pam://$HOSTNAME.
+
+2014-12-10  Alessio Di Mauro <alessio@yubico.com>
+
+	* README: Typo in README.
+
+2014-12-10  Alessio Di Mauro <alessio@yubico.com>
+
+	* .gitignore, AUTHORS, BLURB, COPYING, Makefile.am, NEWS, README,
+	README.adoc, README.md, configure.ac, m4/lib-ld.m4, m4/lib-link.m4,
+	m4/lib-prefix.m4, m4/manywarnings.m4, m4/warnings.m4, pam-u2f.c,
+	pam_u2f.8.txt, tests/Makefile.am, tests/basic.c, util.c, util.h: 
+	Added initial content.
+
+2014-12-10  Alessio Di Mauro <a-dma@users.noreply.github.com>
+
+	* Initial commit
+

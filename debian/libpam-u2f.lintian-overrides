@@ -1,0 +1,2 @@
+# See lintian bug #973604
+libpam-u2f: spare-manual-page usr/share/man/man8/pam_u2f.8.gz

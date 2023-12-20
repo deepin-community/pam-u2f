@@ -1,5 +1,165 @@
-template-repository (1.0-1) unstable; urgency=medium
+pam-u2f (1.1.0-1.1) unstable; urgency=medium
 
-  * Initial release
+  * Non-maintainer upload.
+  * Handle converse() returning NULL (CVE-2021-31924) (Closes: #987545)
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Salvatore Bonaccorso <carnil@debian.org>  Sat, 05 Jun 2021 15:04:24 +0200
+
+pam-u2f (1.1.0-1) unstable; urgency=low
+
+  * New upstream version 1.1.0 (2020-09-17)
+    + Add support for FIDO2
+      Switch from libu2f-host+libu2f-server to libfido2
+    + Add support for User Verification
+    + Add support for PIN Verification
+    + Add support for Resident Credentials
+    + Add support for SSH credential format
+
+  * Update nicoo's name & address
+  * libpam-u2f: Override Lintian warning about the pam_u2f(8) manpage.
+    See Lintian bug #973604
+  * d/copyright:
+    + Set Upstream-Contact to Yubico's OSS maintainers role
+    + Update package authorship metadata
+
+  * Switch to debhelper 12.
+    Replace the deprecated debian/compat file with a Build-Depends on
+    debhelper-compat
+  * d/upstream: Update signing keyring
+  * d/control: Declare compliance with policy v4.5.0.
+    No change required
+  * Drop obsolete README.source.
+    The package should explain how to explain cowbuilder, or refer to the
+    packaging repo by an URL that has been obsolete for years.
+  * d/gbp.conf: Sign tags.
+    Unsure why I disabled it.
+  * d/rules: No need to pass --builddirectory to dh
+  * d/watch: Update to uscan v4, tidy up the syntax
+
+ -- nicoo <nicoo@debian.org>  Mon, 02 Nov 2020 13:49:23 +0100
+
+pam-u2f (1.0.8-1) unstable; urgency=high (security)
+
+  [ nicoo ]
+  * New upstream version 1.0.8 (2019-06-04)
+    + Fix insecure debug file handling CVE-2019-12209. (Closes: #930021)
+    + Fix debug file descriptor leak CVE-2019-12210. (Closes: #930023)
+    + Fix a non-critical buffer out-of-bounds access. (Closes: #930047)
+
+  * Comply with Debian policy v4.4.0
+    + debian/control: Set Rules-Requires-Root to no
+    + debian/rules:   Install upstream's changelog
+
+  * debian/control: Update my email address
+  * debian/gbp.conf: Move the packaging branch to debian/sid
+
+  [ Simon Josefsson ]
+  * Drop myself from Uploader's.
+
+ -- nicoo <nicoo@debian.org>  Sat, 20 Jul 2019 13:01:18 +0200
+
+pam-u2f (1.0.7-1) unstable; urgency=high
+
+  * New upstream version 1.0.7 (2018-05-15)
+    Closes: #898519
+  * Update & complete debian/copyright
+  * Move the packaging repository to salsa.d.o
+  * Use the tracker.debian.org email address for the maintainers.
+  * Switch to debhelper 11
+
+ -- nicoo <nicoo@debian.org>  Tue, 29 May 2018 14:33:06 +0200
+
+pam-u2f (1.0.6-1) unstable; urgency=medium
+
+  * New upstream version (2018-04-18)
+    - Remove upstreamed patch
+
+  * Bump Standards-Version to 4.1.4
+    - debian/copyright: Use HTTPS Format URI
+
+  * Update upstream's keyring
+    - Move it to debian/upstream
+    - Include a script debian/upstream/signing-key.sh that generates it
+
+ -- nicoo <nicoo@debian.org>  Mon, 30 Apr 2018 13:35:48 +0200
+
+pam-u2f (1.0.4-2) unstable; urgency=medium
+
+  * debian/control: Add myself as uploader
+  * debian/control: Move the packaging repo to Alioth
+
+ -- nicoo <nicoo@debian.org>  Fri, 23 Sep 2016 20:38:06 +0200
+
+pam-u2f (1.0.4-1) unstable; urgency=medium
+
+  * Acknowledge NMU, thanks nicoo.
+
+ -- Simon Josefsson <simon@josefsson.org>  Wed, 10 Aug 2016 16:08:42 +0200
+
+pam-u2f (1.0.4-0.3) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Fix the generated binaries on Debian/kFreeBSD
+  * Drop spurious dependency on autotools-dev
+
+ -- nicoo <nicoo@debian.org>  Tue, 02 Aug 2016 15:48:58 +0200
+
+pam-u2f (1.0.4-0.2) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Set Breaks and Replaces for the moved manpage.
+
+ -- nicoo <nicoo@debian.org>  Thu, 14 Jul 2016 21:53:52 +0200
+
+pam-u2f (1.0.4-0.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * New upstream version.
+    Fixes possible permission escalation when using XDG_CONFIG_HOME.
+  * Use HTTPS for Vcs-Git.
+  * Use build-time hardening.
+  * Bump Standards-Version to 3.9.8.
+    No change required.
+  * Put the pam_u2f(8) manpage in the libpam_u2f package.
+
+ -- nicoo <nicoo@debian.org>  Wed, 06 Jul 2016 13:25:51 +0200
+
+pam-u2f (1.0.3-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Alessio Di Mauro <alessio@yubico.com>  Mon, 02 Nov 2015 15:47:25 +0100
+
+pam-u2f (1.0.2-1) unstable; urgency=medium
+
+  [ Alessio Di Mauro ]
+  * New upstream version
+
+  [ Simon Josefsson ]
+  * Update upstream-signing-key.pgp.
+
+ -- Alessio Di Mauro <alessio@yubico.com>  Tue, 06 Oct 2015 14:34:08 +0200
+
+pam-u2f (1.0.1-1) unstable; urgency=medium
+
+  [ Alessio Di Mauro ]
+  * New upstream release.
+
+  [ Simon Josefsson ]
+  * Update README.source.
+  * Update upstream-signing-key.pgp.
+  * Add gbp.conf.
+
+ -- Alessio Di Mauro <alessio@yubico.com>  Thu, 18 Jun 2015 10:35:12 +0200
+
+pam-u2f (1.0.0-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Alessio Di Mauro <alessio@yubico.com>  Wed, 17 Jun 2015 14:19:14 +0200
+
+pam-u2f (0.0.1-1) unstable; urgency=low
+
+  * Initial release. (Closes: #776091)
+
+ -- Alessio Di Mauro <alessio@yubico.com>  Mon, 26 Jan 2015 13:57:25 +0100
