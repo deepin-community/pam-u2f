@@ -1,0 +1,37 @@
+From: pedro martelletto <pedro@yubico.com>
+Date: Wed, 19 May 2021 09:08:44 +0200
+Subject: Handle converse() returning NULL
+Origin: https://github.com/Yubico/pam-u2f/commit/6059b057dd9b6d0164fc16f9422c0d728f902bb5
+Bug: https://github.com/Yubico/pam-u2f/issues/175
+Bug-Debian: https://bugs.debian.org/987545
+Bug-Debian-Security: https://security-tracker.debian.org/tracker/CVE-2021-31924
+
+If a PIN is required and converse() returns NULL, abort the
+authentication flow instead of reverting to FIDO2 without PIN.
+Fixes #175.
+---
+ util.c | 7 ++++++-
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+
+diff --git a/util.c b/util.c
+index 3ea1bd2be7e6..fb07dc70d545 100644
+--- a/util.c
++++ b/util.c
+@@ -1379,8 +1379,13 @@ int do_authentication(const cfg_t *cfg, const device_t *devices,
+           goto out;
+         }
+ 
+-        if (pin_verification == FIDO_OPT_TRUE)
++        if (pin_verification == FIDO_OPT_TRUE) {
+           pin = converse(pamh, PAM_PROMPT_ECHO_OFF, "Please enter the PIN: ");
++          if (pin == NULL) {
++            D(cfg->debug_file, "converse() returned NULL");
++            goto out;
++          }
++        }
+         if (user_presence == FIDO_OPT_TRUE ||
+             user_verification == FIDO_OPT_TRUE) {
+           if (cfg->manual == 0 && cfg->cue && !cued) {
+-- 
+2.32.0.rc0
+
