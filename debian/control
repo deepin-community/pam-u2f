@@ -8,9 +8,10 @@ Priority: optional
 Build-Depends:
 	debhelper-compat (= 12),
 	pkg-config,
-  libfido2-dev,
+    libfido2-dev,
 	libpam0g-dev,
-  libssl-dev
+    libssl-dev,
+	asciidoc,
 Standards-Version: 4.5.0
 Homepage: https://developers.yubico.com/pam-u2f/
 Vcs-Browser: https://salsa.debian.org/auth-team/pam-u2f
