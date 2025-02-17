@@ -1,14 +1,81 @@
-pam-u2f (1.3.0-0deepin) unstable; urgency=medium
+pam-u2f (1.3.2-1) unstable; urgency=medium
 
-  * Upstream release 1.3.0
-  * Support some fido2 devices
+  * New upstream version 1.3.2
 
- -- xiangzelong <xiangzelong@deepin.org>  Mon, 08 Jan 2024 09:47:03 +0800
+ -- Patrick Winnertz <winnie@debian.org>  Sat, 18 Jan 2025 23:32:12 +0100
+
+pam-u2f (1.3.1-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields.
+
+  [ Simon Josefsson ]
+  * New upstream version 1.3.1
+  * Bump d/* copyright years, adding myself.
+  * Use Standards-Version 4.7.0.
+  * Run wrap-and-sort -satbk.
+  * Add d/salsa-ci.yml.
+
+ -- Simon Josefsson <simon@josefsson.org>  Tue, 14 Jan 2025 18:20:07 +0100
+
+pam-u2f (1.3.0-1) unstable; urgency=medium
+
+  * Update the keys according to the yubico website
+    and delete one from the keyring.
+  * Modify gbp.conf
+    + Remove autosigning of upstream, I can't check that
+      tag (and the content) before signing.
+    + Extend the included gbp so that everybody
+      uses gz in this case.
+  * Accknowledge NMU from Salvatore Bonaccorso <carnil@debian.org>
+    to close CVE-2021-31924 (Closes: #987545) - see release 1.1.1
+  * New upstream version 1.3.0 (Closes: #1022073)
+    + Add sanity checking of UV options to pamu2fcfg.
+    + Add support for username expansion in the authfile path.
+    + Improvements to the documentation.
+    + 1.2.1:
+    	+ Fixed an issue where native credentials could be truncated,
+          resulting in failure to authenticate or successful
+          authentication with missing options.
+    	+ Stricter parsing of sshformat credentials.
+    	+ pamu2fcfg now allows a combination of the
+          --username and --nouser options.
+    	+ Improved documentation on FIDO2 options.
+    + 1.2.0:
+        + Added support for EdDSA keys.
+        + Added support for SSH ed25519-sk keys.
+        + Added authenticator filtering based on user verification options.
+        + Fixed an issue with privilege restoration on MacOS.
+        + Fixed an issue where credentials created with pamu2fcfg
+          1.0.8 or earlier were not handled correctly if their origin
+          and appid differed.
+        + Miscellaneous improvements to the documentation.
+        + Miscellaneous minor bug fixes found by fuzzing.
+    + 1.1.1:
+    	+ Fix an issue where PIN authentication could be
+          bypassed (CVE-2021-31924).
+    	+ Fix an issue with nodetect and non-resident credentials.
+    	+ Fix build issues with musl libc.
+    	+ Add support for self-attestation in pamu2fcfg.
+    	+ Fix minor bugs found by fuzzing.
+  * Modify lintian override for new syntax
+  * Update copyright and add myself
+  * Switch to compat level 13
+  * Raise the standards-version to 4.6.2 (no changes needed)
+  * Switched from pkg-config to pkgconf.
+  * Removed Alessio Di Mauro and Nicoo as uploaders, according
+    to process described here: https://wiki.debian.org/PackageSalvaging
+  * Install package into /usr according to the /usr-merge. (Closes: #1061859)
+    Thanks to Michael Biebl <biebl@debian.org> for the patch.
+
+ -- Patrick Winnertz <winnie@debian.org>  Sat, 06 Apr 2024 14:33:00 +0200
 
 pam-u2f (1.1.0-1.1) unstable; urgency=medium
 
-  * Non-maintainer upload.
-  * Handle converse() returning NULL (CVE-2021-31924) (Closes: #987545)
+   * Non-maintainer upload.
+   * Handle converse() returning NULL (CVE-2021-31924) (Closes: #987545)
 
  -- Salvatore Bonaccorso <carnil@debian.org>  Sat, 05 Jun 2021 15:04:24 +0200
 

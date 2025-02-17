@@ -1,18 +1,16 @@
 Source: pam-u2f
 Maintainer: Debian Authentication Maintainers <team+auth@tracker.debian.org>
 Uploaders:
-	Alessio Di Mauro <alessio@yubico.com>,
-	nicoo <nicoo@debian.org>
+ Patrick Winnertz <winnie@debian.org>,
 Section: admin
 Priority: optional
 Build-Depends:
-	debhelper-compat (= 12),
-	pkg-config,
-    libfido2-dev,
-	libpam0g-dev,
-    libssl-dev,
-	asciidoc,
-Standards-Version: 4.5.0
+ debhelper-compat (= 13),
+ libfido2-dev,
+ libpam0g-dev,
+ libssl-dev,
+ pkgconf,
+Standards-Version: 4.7.0
 Homepage: https://developers.yubico.com/pam-u2f/
 Vcs-Browser: https://salsa.debian.org/auth-team/pam-u2f
 Vcs-Git: https://salsa.debian.org/auth-team/pam-u2f.git
@@ -20,10 +18,15 @@ Rules-Requires-Root: no
 
 Package: libpam-u2f
 Architecture: any
-Breaks: pamu2fcfg (<< 1.0.4-0.2)
-Replaces: pamu2fcfg (<< 1.0.4-0.2)
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Recommends: pamu2fcfg
+Breaks:
+ pamu2fcfg (<< 1.0.4-0.2),
+Replaces:
+ pamu2fcfg (<< 1.0.4-0.2),
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends},
+Recommends:
+ pamu2fcfg,
 Description: universal 2nd factor (U2F) PAM module
  Universal 2nd Factor (U2F) is an authentication mechanism that strengthen
  other authentications, and through this PAM module it can be used to
@@ -35,8 +38,11 @@ Description: universal 2nd factor (U2F) PAM module
 
 Package: pamu2fcfg
 Architecture: any
-Breaks: libpam-u2f (<< 1.0.4-0.2)
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Breaks:
+ libpam-u2f (<< 1.0.4-0.2),
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends},
 Description: universal 2nd factor (U2F) PAM module command-line helper tool
  Universal 2nd Factor (U2F) is an authentication mechanism that strengthen
  other authentications, and through this PAM module it can be used to
